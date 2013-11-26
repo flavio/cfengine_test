@@ -1,0 +1,7 @@
+bundle agent propagate_file
+{
+  files:
+    "/tmp/test_file"
+      copy_from => local_cp("/etc/resolv.conf");
+}
+
